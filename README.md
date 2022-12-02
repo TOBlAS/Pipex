@@ -3,7 +3,7 @@
 
 Le projet à pour but de reproduire le comportement Shell des pipes ( | ) en C.
 
-Il nous mène à la découverte de nouvelles nous fonctions tel que :
+Il nous mène à la découverte de nouvelles fonctions tel que :
 
 > fork(), 
 > dup2(), 
@@ -20,7 +20,7 @@ Il nous mène à la découverte de nouvelles nous fonctions tel que :
 
 ### Idée globale du projet :
 
-Nous lisons depuis *l'infile* et exectuons la première commande, puis nous éxécutons la seconde commande avant de rediriger la sortie de celle-ci vers *l'oufile*.
+Nous lisons depuis *l'infile* et exécutons la première commande, puis nous exécutons la seconde commande avant de rediriger la sortie de celle-ci vers *l'oufile*.
 ```pipe()``` envoie le résultat du premier ```execve()``` en *input* du second ```execve()```. ```fork()``` lance par la suite deux processus dans un seul programme, et ```dup2()``` échanges les fichiers avec stdin et stdout.
 
 A noter que lors d'un ```fork()``` les processus lancés sont, silmultanés. Ils se produisent donc en **même temps**.
