@@ -21,11 +21,11 @@ Il nous mène à la découverte de nouvelles fonctions tel que :
 ### Idée globale du projet :
 
 Nous lisons depuis *l'infile* et exécutons la première commande, puis nous exécutons la seconde commande avant de rediriger la sortie de celle-ci vers *l'oufile*.
-```pipe()``` envoie le résultat du premier ```execve()``` en *input* du second ```execve()```. ```fork()``` lance par la suite deux processus dans un seul programme, et ```dup2()``` échanges les fichiers avec stdin et stdout.
+```pipe()``` envoie le résultat du premier ```execve()``` en *input* du second ```execve()```. ```fork()``` lance par la suite deux processus dans un seul programme, et ```dup2()``` échange les fichiers avec stdin et stdout.
 
 A noter que lors d'un ```fork()``` les processus lancés sont, silmultanés. Ils se produisent donc en **même temps**.
 
-La nouveauté majeure dans ce projet, en plus des fonctions ```fork(), pipe(), dup2()``` sont les variables d'environnements directement appelé dans le main.
+La nouveauté majeure dans ce projet, en plus des fonctions ```fork(), pipe(), dup2()``` sont les variables d'environnements directement appelés dans le main.
 
 ```int main(int argc, char **argv, char **envp)```
 
