@@ -3,7 +3,7 @@
 
 Le projet a pour but de reproduire le comportement Shell des pipes ( | ) en C.
 
-Il nous mène à la découverte de nouvelles fonctions tel que :
+Il nous mène à la découverte de nouvelles fonctions telles que :
 
 > fork(), 
 > dup2(), 
