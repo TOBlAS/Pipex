@@ -29,8 +29,8 @@ La nouveauté majeure dans ce projet, en plus des fonctions ```fork(), pipe(), d
 
 ```int main(int argc, char **argv, char **envp)```
 
-Pour comprendre ce que celle-ci implique, je vous invite à taper ```env``` dans votre terminal.
-La ligne ```PATH```, sont les répertoires de toutes les commandes binaires de Shell.
+Pour comprendre ce que celles-ci impliquent, je vous invite à taper ```env``` dans votre terminal.
+La ligne ```PATH```, contient les répertoires de toutes les commandes binaires de Shell.
 
 Elles nous sont indispensables dans ce projet pour reproduire le comportement de Shell.
 
