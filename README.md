@@ -1,7 +1,7 @@
 # Pipex
 ## Ce projet est la découverte en détails et par la programmation d’un mécanisme UNIX que vous connaissez déjà.
 
-Le projet à pour but de reproduire le comportement Shell des pipes ( | ) en C.
+Le projet a pour but de reproduire le comportement Shell des pipes ( | ) en C.
 
 Il nous mène à la découverte de nouvelles fonctions tel que :
 
