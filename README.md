@@ -25,7 +25,7 @@ Nous lisons depuis *l'infile* et exécutons la première commande, puis nous ex�
 
 A noter que lors d'un ```fork()``` les processus lancés sont, silmultanés. Ils se produisent donc en **même temps**.
 
-La nouveauté majeure dans ce projet, en plus des fonctions ```fork(), pipe(), dup2()``` sont les variables d'environnements directement appelés dans le main.
+Les nouveautées majeures dans ce projet, en plus des fonctions ```fork(), pipe(), dup2()``` sont les variables d'environnements directement appelées dans le main.
 
 ```int main(int argc, char **argv, char **envp)```
 
