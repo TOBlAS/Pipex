@@ -16,7 +16,7 @@ Il nous mène à la découverte de nouvelles fonctions telles que :
   ```< infile cmd1 | cmd2 > outfile ```
   
   Ligne de commande entrée par l'utilisateur dans le projet pipex :
-  ```./pipex infile cmd1 cmd2 outile```
+  ```./pipex infile cmd1 cmd2 outfile```
 
 ### Idée globale du projet :
 
