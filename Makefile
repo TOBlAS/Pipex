@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: tobiaslst <tobiaslst@student.42.fr>        +#+  +:+       +#+         #
+#    By: tcaborde <tcaborde@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/12/02 10:37:58 by tobiaslst         #+#    #+#              #
-#    Updated: 2022/12/02 11:17:30 by tobiaslst        ###   ########.fr        #
+#    Updated: 2022/12/12 15:27:25 by tcaborde         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,10 +34,11 @@ OBJ_F		=	$(FUNC:.c=.o)
 #COMMANDS
 %.o: %.c $(HEADER) Makefile
 					@${CC} ${FLAGS} -c $< -o $@
+					@printf "$(ERASE)$(BLUE)[BUILDING]$(END) $@"
 
 $(NAME):		$(OBJ_F) $(OBJ_M)
 				@$(CC) $(OBJ_F) $(OBJ_M) -o $(NAME)
-				@echo "$(GREEN)$(NAME) created!$(DEFAULT)"
+				@echo "$(ERASE)$(GREEN)$(NAME) created!$(DEFAULT)"
 
 all:			$(NAME)
 
@@ -59,3 +60,7 @@ RED = \033[1;31m
 GREEN = \033[1;32m
 YELLOW = \033[1;33m
 DEFAULT = \033[0m
+END=\033[0m
+BLUE=\033[34m
+ERASE=\033[2K\r
+

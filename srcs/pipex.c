@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   pipex.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: tobiaslst <tobiaslst@student.42.fr>        +#+  +:+       +#+        */
+/*   By: tcaborde <tcaborde@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 10:05:08 by tobiaslst         #+#    #+#             */
-/*   Updated: 2022/12/02 10:54:48 by tobiaslst        ###   ########.fr       */
+/*   Updated: 2022/12/12 15:10:27 by tcaborde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/pipex.h"
 
-int main (int argc, char **argv, char **envp)
+int	main(int argc, char **argv, char **envp)
 {
 	t_pipex	pipex;
 
