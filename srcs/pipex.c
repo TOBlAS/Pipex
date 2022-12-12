@@ -6,7 +6,7 @@
 /*   By: tcaborde <tcaborde@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/02 10:05:08 by tobiaslst         #+#    #+#             */
-/*   Updated: 2022/12/12 15:10:27 by tcaborde         ###   ########.fr       */
+/*   Updated: 2022/12/12 15:44:50 by tcaborde         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int	main(int argc, char **argv, char **envp)
 	pipex.infile = open(argv[1], O_RDONLY);
 	if (pipex.infile < 0)
 		error_msg(ERROR_INFILE);
-	pipex.outfile = open(argv[4], O_TRUNC | O_CREAT | O_RDWR, 0777);
+	pipex.outfile = open(argv[4], O_TRUNC | O_CREAT | O_WRONLY, 0777);
 	if (pipex.outfile < 0)
 		error_msg(ERROR_OUTFILE);
 	if (pipe(pipex.fd) < 0)
